@@ -1,0 +1,21 @@
+public class Student {
+    String name;
+    int id;
+    void details(){
+        System.out.println("details");
+    }
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+        s1.name = "pitu";
+        s1.id = 101;
+        s2.name = "biva";
+        s2.id = 102;
+        s3.name="priya";
+        s3.id = 103;
+    System.out.println("Student name: " + s1.name + "\n  Student id: " + s1.id);
+    System.out.println("Student name: " + s2.name + "\n  Student id: " + s2.id);
+    System.out.println("Student name: " + s3.name + "\n  Student id: " + s3.id);
+    }
+}
