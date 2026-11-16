@@ -1,0 +1,18 @@
+public class ShiftOperators {
+    public static void main(String[] args) {
+        int a = 8; // Binary: 1000
+
+        // Left shift: shifts bits to the left, equivalent to multiplying by 2^n
+        int leftShift = a << 2; // 1000 << 2 becomes 100000 (32 in decimal)
+        System.out.println(a + " << 2 = " + leftShift);
+
+        // Signed right shift: shifts bits right, preserves sign, equivalent to dividing by 2^n
+        int rightShift = a >> 2; // 1000 >> 2 becomes 0010 (2 in decimal)
+        System.out.println(a + " >> 2 = " + rightShift);
+        
+        int b = -8;
+        // Unsigned right shift: shifts bits right, fills with zeros on the left
+        int unsignedRightShift = b >>> 2; 
+        System.out.println(b + " >>> 2 = " + unsignedRightShift);
+    }
+}
