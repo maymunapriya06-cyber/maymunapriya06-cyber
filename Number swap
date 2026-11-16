@@ -1,0 +1,15 @@
+public class SwapNumbers {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        // Swapping logic using arithmetic operators
+        a = a + b; // a becomes 30
+        b = a - b; // b becomes 10 (which was the original value of a)
+        a = a - b; // a becomes 20 (which was the original value of b)
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
