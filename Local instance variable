@@ -1,0 +1,25 @@
+public class VariableScope {
+    // Instance variable - accessible by all methods in the class
+    int instanceVar = 50; 
+
+    public void myMethod() {
+        // Local variable - accessible only within this method
+        int localVar = 10; 
+        
+        System.out.println("Inside myMethod:");
+        System.out.println("Local Variable: " + localVar);
+        System.out.println("Instance Variable accessed from myMethod: " + instanceVar);
+    }
+
+    public static void main(String[] args) {
+        VariableScope obj = new VariableScope();
+        
+        System.out.println("Inside main method:");
+        System.out.println("Instance Variable: " + obj.instanceVar);
+        
+        // Cannot access localVar here. The line below would cause an error:
+        // System.out.println(localVar); 
+        
+        obj.myMethod();
+    }
+}
