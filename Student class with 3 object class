@@ -1,0 +1,29 @@
+class Student {
+    String name;
+    int rollNo;
+
+    // Constructor
+    Student(String name, int rollNo) {
+        this.name = name;
+        this.rollNo = rollNo;
+    }
+
+    void displayInfo() {
+        System.out.println("Name: " + name + ", Roll No: " + rollNo);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating 3 Student objects
+        Student s1 = new Student("Alice", 101);
+        Student s2 = new Student("Bob", 102);
+        Student s3 = new Student("Charlie", 103);
+
+        // Displaying information
+        System.out.println("Student Details:");
+        s1.displayInfo();
+        s2.displayInfo();
+        s3.displayInfo();
+    }
+}
